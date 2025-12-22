@@ -48,3 +48,8 @@ const introsec = document.getElementById("intro");
 startbtn.addEventListener("click", () => {
     introsec.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 });
+
+const returnarrow = document.getElementById("return-arrow");
+returnarrow.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+});
