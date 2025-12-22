@@ -13,3 +13,10 @@
     object-fit: cover;
     border-radius: 5px;
 }
+
+#intro-cover {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    opacity: 0.5;
+}
