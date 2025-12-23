@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="style.css" rel="stylesheet">
+        <script src="config.js"></script>
+        <title>編入から見るINIAD</title>
+    </head>
+    <body>
+        <header id="header">
+            <div class="card text-bg-dark">
+                <img src="images/main.jpeg" alt="iniad shot from my room" id="cover-img">
+                <div class="card-img-overlay d-flex flex-column mb-3 justify-content-center align-items-start">
+                    <h1 class="card-title text-center fs-1">こんにちは。</h1>
+                    <p class="card-text text-center fs-5" id="weather"></p>
+                    <button class="card-text btn btn-primary btn-lg" id="start-btn"><i class="bi bi-chevron-double-down"></i> はじめる</button>
+                </div>
+            </div>
+        </header>
+        
+        <div id="intro" class="container-fluid">
+            <p><span class="display-4">はじめに</span> 
+                <i class="bi bi-arrow-return-left" id="return-arrow"></i>
+            </p>
+            <div class="card-group row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 text-bg-dark mb-3">
+                        <img src="images/hamipa-11.jpg" alt="hamipa instead of my face" class="card-img-top">
+                        <div class="card-header">
+                            <h5 class="card-title"><a href="aboutme.html" class="fw-bold">私について</a></h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">このサイト作った人は誰ですか？このパンダは何ですか？なぜ編入までしましたか？後悔はありますか？私についての質問をお答えします。</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-bg-secondary mb-3">
+                        <img src="images/iniad.jpeg" alt="pic of iniad" class="card-img-top">
+                        <div class="card-header">
+                            <h5 class="card-title"><a href="aboutiniad.html" class="link-info fw-bold">INIADについて</a></h5>
+                        </div>
+                        <div class="card-body">
+                            
+                            <p class="card-text">そもそもINIADとはなんですか？学生生活はどうですか？INIAD生にしかできないことはありますか？謎みたいな大学生活についての質問をお答えします。</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-bg-light mb-3">
+                        <img src="images/outside.jpg" alt="pic of akabanedai campus taken outside of wellb" class="card-img-top">
+                        <div class="card-header">
+                            <h5 class="card-title"><a href="toyou.html" class="link-opacity-100 fw-bold">あなたへ</a></h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">このサイトを読んでいるあなたへの伝えたいこと・受験生や私もしくはINIADにご興味を持つあなたへのメッセージです。</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="text-center"><small>1F10240312 LEUNG KA TUNG TOBY（トビー）| <i class="bi bi-github"></i> <a href="https://github.com/lktoby">Github</a> | <a href="mailto:s1f102403126@iniad.org"><i class="bi bi-envelope"></i> メール</a> | <a href="#header"><i class="bi bi-chevron-bar-up"></i>トップへ</a> </small></p>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
