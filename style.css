@@ -16,7 +16,7 @@
 
 #intro-cover {
     width: 100%;
-    min-height: 30vh;
+    max-height: 100vh;
     object-fit: cover;
     opacity: 0.5;
 }
