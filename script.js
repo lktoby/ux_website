@@ -4,7 +4,7 @@ const URL = "https://api.openweathermap.org/data/2.5/weather?";
 
 const CITY = 'q=Tokyo'; 
 
-const url = URL + CITY + '&appid=' + API_KEY_WEATHER;
+const url = URL + CITY + '&appid=' + API_KEY_WEATHER + '&lang=ja' + '&units=metric'
 
 const to_japanese = {
     Thunderstorm: "嵐",
@@ -18,29 +18,19 @@ const to_japanese = {
 fetch(url)
 .then(response => response.json())
 .then((data) => {
-    let dateObj = new Date();    //Dateオブジェクト作成  make a Date object
-    dateObj.setTime(Number(data.dt) * 1000); //取得したdtをセット set "dt" to the object
-    let month = dateObj.getMonth();  // 月を取り出し。ただし1月が0  Jan. is 0.
-    let day = dateObj.getDate();    // 日を取り出し
-    let hours = dateObj.getHours();  // 時を取り出し
-    let minutes = dateObj.getMinutes();  // 分を取り出し
-    //console.log(`${month + 1}月${day}日 ${hours}時 ${minutes}分`)
-    /* let title = document.getElementById("weather-title")
-    title.textContent = `Weather at ${dateObj.toLocaleString()}` */
     
-    let weather = data.weather[0].main;   //天気  
-    let city = data.name;   // 都市名
-    let maxTemp = data.main.temp_max; //最高気温
-    
+    let weather = data.weather[0].main; 
+    let city = data.name;
+    let maxTemp = data.main.temp_max;
+    let minTemp = data.main.temp_min;
+    let icon_url = "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png"
+    let image = document.createElement("img");
+    image.src = icon_url;
     let content = document.getElementById("weather");
-    content.textContent = `今日の天気は${to_japanese[weather]}です。`
-
-    /* let icon_url = "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png"
-    let image = document.createElement("img")
-    image.src = icon_url
-    let card = document.getElementById("weather-card")
-    let header = document.getElementById("weather-header")
-    card.insertBefore(image, header) */
+    let weather_text = `気温：${Math.round(maxTemp).toFixed(1)}° | ${Math.round(minTemp).toFixed(1)}°`
+    content.innerHTML = `${city}の天気：${to_japanese[weather]} `;
+    content.appendChild(image);
+    content.innerHTML += weather_text;
 })
 
 const startbtn = document.getElementById("start-btn");
