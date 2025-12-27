@@ -16,3 +16,8 @@
     object-fit: cover;
     opacity: 0.5;
 }
+
+.nav.flex-column {
+    width: 200px;
+    min-width: 150px;
+}
