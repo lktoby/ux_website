@@ -1,7 +1,7 @@
 #intro {
     background: #FFFFFF;
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(153, 153, 153, 1) 100%);
-    min-height: 100vh;
+    scroll-margin-top: 6rem;
 }
 
 .card-img-top {
