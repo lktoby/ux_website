@@ -10,7 +10,7 @@
         <title>編入から見るINIAD</title>
     </head>
     <body>
-        <nav class="navbar sticky-top bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">編入から見るINIAD</a>
                 <span class="navbar-text" id="weather">
@@ -20,16 +20,13 @@
         <div id="header">
             <div class="position-relative">
                 <img src="images/main.jpeg" alt="iniad shot from my room" id="cover">
-                <h1 class="position-absolute bottom-50 start-50 translate-middle">こんにちは。</h1>
-                <p class="position-absolute top-50 start-50 translate-middle-x" id="weather"></p>
+                <h1 class="position-absolute bottom-50 start-50 translate-middle" id="greeting">こんにちは。</h1>
                 <button class="btn btn-primary btn-lg position-absolute top-50 start-50 translate-middle-x" id="start-btn"><i class="bi bi-chevron-double-down"></i> はじめる</button>
             </div>
         </div>
         
         <div id="intro" class="container-fluid p-3">
-            <p><span class="display-4">はじめに</span> 
-                <i class="bi bi-arrow-return-left" id="return-arrow"></i>
-            </p>
+            <p><span class="display-4">はじめに</span></p>
             <div class="card-group row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100 text-bg-dark mb-3">
