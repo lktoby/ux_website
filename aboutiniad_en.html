@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/panda.svg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="style.css" rel="stylesheet">
+        <script src="config.js"></script>
+        <title>About INIAD</title>
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index_en.html">INIAD as a transfer</a>
+                <span class="navbar-text" id="weather_en">
+                </span>
+                <a href="aboutiniad.html" class="btn btn-outline-primary">日本語</a>
+            </div>
+        </nav>
+        <div id="header">
+            <div class="position-relative">
+                <img src="images/iniad2.jpg" alt="a pic of iniad" id="cover">
+                <h1 class="position-absolute bottom-50 start-50 translate-middle text-light-emphasis">What is INIAD?</h1>
+                <button class="btn btn-outline-light btn-lg position-absolute top-50 start-50 translate-middle-x" id="start-btn"><i class="bi bi-chevron-double-down"></i>Continue</button>
+            </div>
+        </div>
+
+        <div id="intro" class="row row-cols-1 row-cols-md-2 p-3">
+            <div class="col">
+                <div class="card mb-3 text-bg-primary">
+                    <div class="card-body">
+                        <h2 class="card-title">What is INIAD?</h2>
+                        <p class="card-text"><a href="https://www.iniad.org/" class="link-info fw-bold">INIAD</a> is a department under Toyo University.</p>
+                        <p class="card-text">It stands for <b>I</b>nformation <b>N</b>etworking for <b>I</b>nnovation <b>a</b>nd <b>D</b>esign.</p>
+                        <p class="card-text">In short, you learn computer science and also how to apply them to innovation and/or solve real life problems, not just textbook theory.</p>
+                        <div class="accordion accordion-flush">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Subject groups?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">It's a new system adapted from 2022 intakes (6th graduates), where students pick 2 groups of subjects from "Information Subject Groups" and "Networking Subject Groups" to learn deeper from their second year of studies.</li>
+                                            <li class="list-group-item">Subject Group choice is indicated via a Google form submiited at the end of your first year.</li>
+                                            <li class="list-group-item">However, you can't make any changes once you made a choice. In addition, one of them has to be from "Information Subject Group".</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Information Subject Group
+                                </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><mark>Computer System</mark>: Learn about computer and network systems. You also get to try low-end languages like C or OCaml.</li>
+                                            <li class="list-group-item"><mark>Computer Software</mark>: Learn about different techniques used in both frontend and backend. A lot of people take it alongside with UX (Subject Group).</li>
+                                            <li class="list-group-item"><mark>User Experience</mark>: While design related subjects are available to take, there are also subjects related to web and/or UI design. There is also a game dev subject available from 3rd year.</li>
+                                            <li class="list-group-item"><mark>Data Science</mark>: Learn about data analysis, machine learning etc. You also get to touch AI development related topics like deep learning.</li>
+                                            <li class="list-group-item"><mark>ICT Application to Society</mark>: Learn about how ICT is applied in society and suggest solutions as teams. No programming required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold text-decoration-underline" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Networking Subject Group
+                                </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><mark>Business Foundation</mark>: People who don't want to write code pick it and learn how to start and run a business. The subjects are useful for job searching, apparently.</li>
+                                            <li class="list-group-item"><mark>Community Formation</mark>: Learn about community design in local spheres in an ICT aspect. It doesn't feel like an INIAD subject, rather a normal univerity subject.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer"><a href="#header" class="link-body-emphasis">Return to top</a></div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card mb-3 text-bg-secondary">
+                    <img src="images/moocs.png" alt="a screenshot of iniad moocs (logged in from my iniad account)">
+                    <div class="card-body">
+                        <h2 class="card-title">What is it like to study in INIAD?</h2>
+                        <p class="card-text">A department-specific <a href="https://en.wikipedia.org/wiki/Massive_open_online_course" class="link-info fw-bold">MOOCs</a> is used to upload all teaching materials and lecture notes. You can also access to materials to subjects you didn't take.</p>
+                        <p class="card-text">Most classes are in-person lectures, and attendance is taken for the first 5~20 minutes (depending on the lecturer) of every lecture. You cannot access the attendence record form if you don't connect your device to the INIAD Wi-fi.</p>
+                        <p class="card-text">As a transfer, there are compulsory subjects that require prerequisite knowledge of previous subjects that it took some time to catch up to the progress.</p>
+                    </div>
+                    <div class="card-footer"><a href="#header" class="link-body-emphasis">Return to top</a></div>
+                </div>
+            </div>
+            
+
+            <div class="col">
+                <div class="card mb-3 text-bg-secondary">
+                    <img src="images/aihouse.jpg" alt="ai-house">
+                    <div class="card-body">
+                        <h2 class="card-title">What is student life like in INIAD?</h2>
+                        <p class="card-text">Unfortunately, there are not a lot of chances to interact with students from other departments if you don't reach out. Clubs are mostly department-specific. However, as a department of Toyo university, you can always join clubs and events organized by other departments or in other campuses.</p>
+                        <p class="card-text">The campus itself is not very big, however the student dormitory right next to it <a href="https://toyo.749.cc/aihouse/" class="link-info fw-bold">AI-HOUSE</a> fosters international communication actively. Personally, I stay there more than I do at the university campus.</p>
+                        <p class="card-text">There are quite a number of subjects that has group projects that require you to develop something as a team. Though, in most cases the groupmates just stay groupmates, but some people do manage to make a connection out of them.</p>
+                    </div>
+                    <div class="card-footer"><a href="#header" class="link-body-emphasis">Return to top</a></div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card mb-3 text-bg-dark">
+                    <img src="images/iniad-dev.png" alt="screenshot of iniad api site">
+                    <div class="card-body">
+                        <h2 class="card-title">What is so special about INIAD students?</h2>
+                        <p class="card-text">It helps a lot in your job hunting journey in Japan. At least that's what made me decide to transfer to here. There are quite a lot of materials in compulsory classes that you can talk about in job interviews as your personal developing experience.</p>
+                        <p class="card-text">There are cases of graduates entering big tech companies or MNCs. Alumni talks from different companies are held quite often in-campus.</p>
+                        <p class="card-text">Most students seem to be pretty aware of job searching in the market. There are students who find internships and make their portfolios as early as their first year in INIAD. It feels like a place where aspiring developers gather and share information.</p>
+                        <p class="card-text">You can also access <a href="https://app.path.progate.com/dashboard">external developer friendly services</a> for free with an INIAD Google account.</p>
+                    </div>
+                    <div class="card-footer"><a href="#header" class="link-light">Return to top</a></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="text-center"><small>1F10240312 LEUNG KA TUNG TOBY（トビー）| <i class="bi bi-github"></i> <a href="https://github.com/lktoby">Github</a> | <a href="mailto:s1f102403126@iniad.org"><i class="bi bi-envelope"></i> Email</a> | <a href="#header"><i class="bi bi-chevron-bar-up"></i>Return to top</a> | <a href="index_en.html"><i class="bi bi-house"></i>Return to home</a></small> </p>
+        </footer>
+        
+        <script src="script_en.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
